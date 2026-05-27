@@ -105,7 +105,6 @@ VertexList dfs(const Graph& graph, Vertex startVertex){
 			visited[v] = true;
 			result.push_back(v);
 			VertexList adjacent = graph.edges_from(v);
-			std::reverse(adjacent.begin(), adjacent.end());
 			for (Vertex w: adjacent){
 			if (!visited[w]){s.push(w);}
 			}
